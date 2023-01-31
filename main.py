@@ -106,3 +106,18 @@ def bank(money: float, years: int):
 
     return money
 
+# 10 
+
+
+def common_elements(list1: list, list2: list) -> list:
+
+    list1 = set(list1)
+    list2 = set(list2)
+
+    new_list = []
+    for i in list1:
+        if i in list2:
+            new_list.append(i)
+
+    return new_list
+
