@@ -1,4 +1,4 @@
-
+import math
 
 # 5
 def sorting_lists(list1: list, list2: list):
@@ -22,7 +22,7 @@ def is_date(days: int, month: int, year: int) -> bool:
 
     if month == 2 and is_year_leap(year) and days > 29:
         return False
-    
+
     if month == 2 and not is_year_leap(year) and days > 28:
         return False
 
@@ -45,5 +45,18 @@ def is_year_leap(date: int) -> bool:
     if date % 4 == 0:
         return True
     return False
+
+
+# 11
+def square(side: float):
+
+
+    per = 4 * side
+    area = side * side
+    diagonal = math.sqrt(side * side + side * side)
+
+    my_tup = (per, area, diagonal)
+
+    return my_tup
 
 
