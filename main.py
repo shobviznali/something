@@ -1,4 +1,5 @@
 import math
+import os
 
 # 5
 
@@ -144,8 +145,23 @@ def razbienie(list1: list):
     first_list.reverse()
     second_list.reverse()
     third_list.reverse()
-    
+
     list_of_lists = [first_list, second_list, third_list]
 
     return list_of_lists
+
+
+# 3
+
+
+def my_files(directory: str):
+
+
+    if os.path.exists(directory):
+        with os.scandir(directory) as files:
+            for file in files:
+                print(file.name)
+    else:
+        print('No such directory')
+
 
