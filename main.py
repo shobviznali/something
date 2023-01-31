@@ -86,3 +86,9 @@ def is_prime(num: int):
 
     return False
 
+
+# 12 если я правильно понял
+
+
+turning_to_set = lambda list1 : set(list1)
+
