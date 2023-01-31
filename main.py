@@ -1,11 +1,14 @@
 import math
 
 # 5
+
+
 def sorting_lists(list1: list, list2: list):
     print(sorted(list1 + list2))
     print(sorted(list1 + list2, reverse=True))
 
 # 7
+
 
 def is_polindrom(str1: str) -> bool:
     reversed = str1[::-1]
@@ -15,6 +18,8 @@ def is_polindrom(str1: str) -> bool:
 
 
 # 2
+
+
 def is_date(days: int, month: int, year: int) -> bool:
 
     if month > 12 or days > 31:
@@ -41,6 +46,8 @@ def is_date(days: int, month: int, year: int) -> bool:
 
 
 # 9
+
+
 def is_year_leap(date: int) -> bool:
     if date % 4 == 0:
         return True
@@ -48,6 +55,8 @@ def is_year_leap(date: int) -> bool:
 
 
 # 11
+
+
 def square(side: float):
 
 
@@ -59,4 +68,21 @@ def square(side: float):
 
     return my_tup
 
+# 6
+
+
+def is_prime(num: int):
+
+    times = 1
+    if num == 2:
+        return True
+
+    for i in range(1, int(num/2)):
+        if num % i == 0:
+            times += 1
+
+    if times == 2:
+        return True
+
+    return False
 
