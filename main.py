@@ -165,3 +165,25 @@ def my_files(directory: str):
         print('No such directory')
 
 
+# 13 я не понял что должна делать вторая функция
+
+
+def counting(str1: str):
+
+    my_dict = {'a': str1.count('a'), 'b': str1.count('b'), 'c': str1.count('c'),
+               'd': str1.count('d'), 'e': str1.count('e'), 'f': str1.count('f'),
+               'g': str1.count('g'), 'h': str1.count('h'), 'i': str1.count('i'),
+               'j': str1.count('j'), 'k': str1.count('k'), 'l': str1.count('l'),
+               'm': str1.count('m'), 'n': str1.count('n'), 'o': str1.count('o'),
+               'p': str1.count('p'), 'q': str1.count('q'), 'r': str1.count('r'),
+               's': str1.count('s'), 't': str1.count('t'), 'u': str1.count('u'),
+               'v': str1.count('v'), 'w': str1.count('w'), 'x': str1.count('x'),
+               'y': str1.count('y'), 'z': str1.count('z')}
+
+    new_dict = {}
+    for key, value in my_dict.items():
+        if value != 0:
+            new_dict[key] = value
+
+    return new_dict
+
