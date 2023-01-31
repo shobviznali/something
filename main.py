@@ -92,3 +92,17 @@ def is_prime(num: int):
 
 turning_to_set = lambda list1 : set(list1)
 
+
+
+# 1
+
+
+def bank(money: float, years: int):
+
+    for i in range(years):
+        money = money + ((money * 10) / 100)
+        years -= 1
+        bank(money, years)
+
+    return money
+
