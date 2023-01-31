@@ -106,7 +106,7 @@ def bank(money: float, years: int):
 
     return money
 
-# 10 
+# 10
 
 
 def common_elements(list1: list, list2: list) -> list:
@@ -120,4 +120,32 @@ def common_elements(list1: list, list2: list) -> list:
             new_list.append(i)
 
     return new_list
+
+
+
+# 8
+
+
+def razbienie(list1: list):
+
+    first_list = []
+    second_list = []
+    third_list = []
+
+    for i in range(0, int(len(list1) / 3)):
+        first_list.append(list1[i])
+
+    for i in range(int(len(list1) / 3), 2 * int(len(list1) / 3)):
+        second_list.append(list1[i])
+
+    for i in range(2 * int(len(list1) / 3), len(list1)):
+        third_list.append(list1[i])
+
+    first_list.reverse()
+    second_list.reverse()
+    third_list.reverse()
+    
+    list_of_lists = [first_list, second_list, third_list]
+
+    return list_of_lists
 
